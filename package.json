@@ -45,7 +45,6 @@
     "test": "nyc npm run -s test:_mocha",
     "test:ci": "nyc npm run -s test:_mocha",
     "test:_mocha": "_mocha \"tests/lib/**/*.js\" --reporter progress --timeout 4000",
-    "version": "npm run -s build && eslint lib/rules --fix && git add .",
     "watch": "npm run test:_mocha -- --watch --growl"
   },
   "repository": {
