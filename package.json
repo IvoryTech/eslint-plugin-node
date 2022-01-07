@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-node",
+  "name": "@ivorytech/eslint-plugin-node",
   "version": "11.1.0",
   "description": "Additional ESLint's rules for Node.js",
   "engines": {
@@ -45,14 +45,12 @@
     "test": "nyc npm run -s test:_mocha",
     "test:ci": "nyc npm run -s test:_mocha",
     "test:_mocha": "_mocha \"tests/lib/**/*.js\" --reporter progress --timeout 4000",
-    "preversion": "npm test",
     "version": "npm run -s build && eslint lib/rules --fix && git add .",
-    "postversion": "git push && git push --tags",
     "watch": "npm run test:_mocha -- --watch --growl"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mysticatea/eslint-plugin-node.git"
+    "url": "https://github.com/IvoryTech/eslint-plugin-node"
   },
   "keywords": [
     "eslint",
@@ -66,12 +64,5 @@
     "path",
     "import",
     "require"
-  ],
-  "author": "Toru Nagashima",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mysticatea/eslint-plugin-node/issues"
-  },
-  "homepage": "https://github.com/mysticatea/eslint-plugin-node#readme",
-  "funding": "https://github.com/sponsors/mysticatea"
+  ]
 }
