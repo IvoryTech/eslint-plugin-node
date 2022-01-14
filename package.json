@@ -1,6 +1,6 @@
 {
   "name": "@ivorytech/eslint-plugin-node",
-  "version": "11.1.5",
+  "version": "11.1.6",
   "description": "Additional ESLint's rules for Node.js",
   "engines": {
     "node": ">=8.10.0"
